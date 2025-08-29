@@ -109,7 +109,7 @@ export function AppSidebar() {
   };
 
   return (
-    <Sidebar className="glass-panel border-r border-white/10">
+    <Sidebar className="bg-sidebar border-r border-sidebar-border shadow-2xl backdrop-blur-none">
       <SidebarContent className="p-4">
         {/* Logo */}
         <div className="flex items-center gap-3 mb-8 px-4">
@@ -181,10 +181,10 @@ export function AppSidebar() {
         {/* Status indicator */}
         {!isCollapsed && (
           <div className="mt-auto p-4">
-            <div className="glass-card p-4 fade-in border border-accent/20">
+            <div className="bg-accent/5 border border-accent/30 rounded-xl p-4 fade-in shadow-lg">
               <div className="flex items-center gap-3 mb-2">
                 <div className="relative">
-                  <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-accent rounded-full animate-pulse shadow-lg"></div>
                   <div className="absolute inset-0 w-3 h-3 bg-accent rounded-full animate-ping opacity-75"></div>
                 </div>
                 <span className="text-sm font-semibold text-accent">System Status</span>
